@@ -8,12 +8,14 @@ app.get('/', (req, res) => {
 
 const routerPosts = require('./routers/posts.js');
 
+app.use('/posts', routerPosts);
+
 /*
 app.get('/posts', (req, res) => {
     res.send("Lista dei post");
 })
 app.get('/posts/:id', (req, res) => {
-    res.send("Dettagli del post" + req.params.id);
+    res.send("Dettaglio del post" + req.params.id);
 })
 app.post('/posts', (req, res) => {
     res.send("Inserimento di un nuovo post");
@@ -25,10 +27,10 @@ app.patch('/posts/:id', (req, res) => {
     res.send("Modifica parziale del post" + req.params.id);
 })
 app.delete('/posts/:id', (req, res) => {
-    res.send("Rimozione del post" + req.params.id);
+    res.send("Cancellazione del post" + req.params.id);
 })
+*/
 
 app.listen(port, () => {
     console.log(`Server in ascolto alla porta ${port}`);
 })
-*/
