@@ -6,6 +6,9 @@ app.get('/', (req, res) => {
     res.send("Home Page");
 })
 
+const routerPosts = require('./routers/posts.js');
+
+/*
 app.get('/posts', (req, res) => {
     res.send("Lista dei post");
 })
@@ -28,3 +31,4 @@ app.delete('/posts/:id', (req, res) => {
 app.listen(port, () => {
     console.log(`Server in ascolto alla porta ${port}`);
 })
+*/

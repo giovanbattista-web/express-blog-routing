@@ -21,3 +21,5 @@ router.delete('/:id',(req,res) =>{
     res.send("Rimozione del post" + req.params.id);
 })
 
+module.exports = router;
+
