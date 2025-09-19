@@ -1,37 +1,37 @@
 // IMPORTO EXPRESS
 const express = require('express');
 
-// IMPORTO LA CLASSE ROUTER DI EXPRESS
+// IMPORTIAMO LA CLASSE ROUTER DI EXPRESS
 const router = express.Router();
 
-// DEFINISCO LA ROTTA PER I POST 
+// DEFINIAMO LE ROTTE PER I POST 
 // INDEX 
-router.get('/',(req,res) =>{
+router.get('/', (req, res) => {
     res.send('Elenco dei post');
 })
 
 // SHOW 
-router.get('/:id',(req,res) =>{
+router.get('/:id', (req, res) => {
     res.send(`Post con id : ${req.params.id}`);
 })
 
 // STORE
-router.post('/',(req,res) =>{
+router.post('/', (req, res) => {
     res.send("Inserimento di un nuovo post");
 })
 
 // UPDATE
-router.put('/:id',(req,res) =>{
+router.put('/:id', (req, res) => {
     res.send(`Modifica totale del post con id : ${req.params.id}`);
 })
 
 // MODIFY
-router.patch('/:id',(req,res) =>{
+router.patch('/:id', (req, res) => {
     res.send(`Modifica parziale del post con id : ${req.params.id}`);
 })
 
 // DESTROY
-router.delete('/:id',(req,res) =>{
+router.delete('/:id', (req, res) => {
     res.send(`Cancellazione del post con id : ${req.params.id}`);
 })
 

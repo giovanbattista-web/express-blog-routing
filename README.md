@@ -11,6 +11,3 @@ e via dicendo…
 Registrare il router dentro app.js con il prefisso posts/.
 Nota:
 Avete anche l’array dei post che vi abbiamo fornito, salvatelo da qualche parte. Ci servirà per i prossimi step. Per oggi vi può servire in caso vogliate provare i bonus.
-Bonus
-Provare a restituire la lista dei post dalla rotta index, in formato json
-Provare a restituire un singolo post dalla rotta show, sempre in formato json
